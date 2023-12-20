@@ -336,7 +336,9 @@ module.exports = {
 };
 
 function getWeekday(dayNo) {
+  // handle edge cases 
   if (dayNo < 0 || dayNo > 6) dayNo = 0;
+  // otherwise return array at given index 	
   return weekdays[dayNo];
 }
 ```
@@ -360,8 +362,6 @@ function getWeekday(dayNo) {
 #### Module Miscellaneous
 
 - Since modules are about code reuse, they can be required an unlimited number of times throughout the application.
-
-- The code in the module **only runs the first time the module is required**.<br>Allow me demo this for you.
 
 - Any variables declared within a module are local to the module - they do not pollute the global scope.
 
