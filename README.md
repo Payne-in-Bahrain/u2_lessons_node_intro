@@ -431,21 +431,16 @@ let sum = add(5, 10);
 
 ### 💪 Modules Practice - Single Piece of Functionality
 
-Create a module named `random.js`:
+Create a module named `cool.js`:
 
-1. That has a function **assigned** to the `module.exports` object.
-2. The function should define two parameters, `min` & `max`.
-3. The function should return a random number, as an integer, between `min` & `max`, inclusive.  This code snippet should look a bit familiar:
-    ```js
-    Math.floor(Math.random() * (max - min + 1) + min);
-    ```
+1. That has a function named coolifier **assigned** to the `module.exports` object.
+2. The function should take a single parameter.  
+3. The function should console.log the string passed into it with " is cool." attached to the end. 
 4. Test the module in `main.js` like this:
 	
 	```js
-	const random = require('./random');
-	for (let i = 0; i < 10; i++) {
-	  console.log( random(100, 200) );
-	}
+	const coolModule = require('./cool');
+	coolModule.coolifier("Michael")
 	```
 
 ### 💪 Modules Practice - Multiple Functionality
