@@ -526,21 +526,22 @@ Type `node main` to try it out.
 Examining the `packages.json` file reveals that it's structured something like this:
 
 	```js
-	{
-	  "name": "first-node",
-	  "version": "1.0.0",
-	  "description": "",
-	  "main": "main.js",
-	  "scripts": {
-	    "test": "echo \"Error: no test specified\" && exit 1"
-	  },
-	  "author": "User <email@user.com>",
-	  "license": "MIT",
-	  "dependencies": {
-	    "request": "^2.88.0"
-	  }
-	}
-	```
+ {
+  "name": "first_node",
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "", 
+  "dependencies": {
+    "axios": "^1.6.2"
+  }
+}
+```
 
 The `package.json` is used to install a project's dependencies.
 
