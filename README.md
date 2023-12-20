@@ -492,7 +492,7 @@ npm init -y
 Now, let's use `npm` to download and install a package:
 
 ```
-npm install request
+npm i axios
 ```
 
 There is now a `node_modules` folder that contains a folder for the `request` module and its many dependencies.
@@ -505,13 +505,19 @@ We can now require the `request` module in **main.js** and make HTTP requests:
 
 ```js
 // Don't specify path when module is in node_modules
-const request = require('request');
-request(
-  'http://jsonplaceholder.typicode.com/users',
-  function(err, res, body) {
-    console.log(body);
+const axios = require('axios');
+
+const fetchData = async() => {
+  try {
+    const response = await axios.get('http://jsonplaceholder.typicode.com/users');
+    console.log(response.data);
+  } catch (error) {
+    console.error('Error making the request:', error.message);
   }
-);
+}
+
+// Call the async function
+fetchData();
 ```
 > Note the first parameter in the callback is `err`.<br>This "error-first" callback signature is prevalent throughout Node.
 
