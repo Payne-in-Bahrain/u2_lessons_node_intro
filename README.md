@@ -144,19 +144,10 @@ Most importantly, wide adoption of Node.js results in strong demand for Node dev
 
 ## 4. Why is Node.js so Performant?
 
-It's important to understand how time consuming Input/Output operations are:
+**Input/Output (I/O):**
+Input/Output refers to tasks a computer does when it interacts with external systems, like databases or networks. These tasks often take more time than operations happening inside the computer. For developers, handling Input/Output properly is crucial for performance and usability. Node.js was created to help with these challenges.
 
-<img src="https://i.imgur.com/iXshhYh.jpg">
-
-Input/output is a term used to describe tasks a computer does that involves interfacing with external systems in the operating system or network. A basic example of an Input/Output workflow could be accessing data from a database, or making requests over a network, among many others. These processes typically take much more time than operations taking place inside of a runtime. Input/Output considerations are a massive concern for software engineers and not considering these in a reasonable manner can render your project unusable under certain situations and, at best, will introduce performance delays and capacity limits if not properly considered. One of the primary goals of Node.js was to assist engineers in alleviating some of these Input/Output challenges.
-
-Node's **Asynchronous / Event-driven** design enables **non-blocking** Input/Output:
-
-<img src="https://i.imgur.com/ARbweHg.jpg">
-
-A typical Node server is capable of supporting _tens of thousands_ of concurrent connections!
-
-Because Node's high-performance, non-blocking I/O operations must be designed as **asynchronous methods**, a Node developer will use callback functions and/or promises extensively.
+Node.js, with its asynchronous and event-driven design, handles Input/Output in a way that doesn't block other operations. This means a Node server can handle many connections simultaneously, making it efficient. Developers use callback functions and promises to work with Node's non-blocking I/O.
 
 Cool, let's learn about Node Modules...
 
