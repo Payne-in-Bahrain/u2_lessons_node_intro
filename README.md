@@ -24,8 +24,7 @@
 
 We'll be writing a bit of code in VS Code in this lesson!
 
-1. In Terminal, move into your GA folder:  `cd ~/GA`
-2. Fork and clone this repo 
+1. Fork and clone this repo in your GA folder. 
 3. Make a new folder named first-node:  `mkdir first-node`
 4. Move into the new folder:  `cd first-node`
 5. Create a main.js file: `touch main.js`
