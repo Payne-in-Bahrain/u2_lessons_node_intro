@@ -24,11 +24,12 @@
 
 We'll be writing a bit of code in VS Code in this lesson!
 
-1. In Terminal, move into your code folder:  `cd ~/code`
-2. Make a new folder named first-node:  `mkdir first-node`
-3. Move into the new folder:  `cd first-node`
-4. Create a main.js file: `touch main.js`
-5. Open the project/folder in VS Code:  `code .`
+1. In Terminal, move into your GA folder:  `cd ~/GA`
+2. Fork and clone this repo 
+3. Make a new folder named first-node:  `mkdir first-node`
+4. Move into the new folder:  `cd first-node`
+5. Create a main.js file: `touch main.js`
+6. Open the project/folder in VS Code:  `code .`
 
 ## 2. What is Node.js?
 
