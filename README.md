@@ -592,7 +592,7 @@ Type `node main` to try it out.
 
 Examining the `packages.json` file reveals that it's structured something like this:
 
-	```js
+```
  {
   "name": "first_node",
   "version": "1.0.0",
