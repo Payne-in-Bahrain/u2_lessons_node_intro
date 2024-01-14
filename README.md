@@ -144,6 +144,9 @@ Most importantly, wide adoption of Node.js results in strong demand for Node dev
 
 ## 4. Why is Node.js so Performant?
 
+[Exploring the Inner Workings of the Node.js Event Loop](https://www.devtip.co/exploring-the-inner-workings-of-the-node-js-event-loop/)
+
+
 ## Input/Output (I/O) and Node.js:
 
 When a computer interacts with external systems like databases or networks, it performs Input/Output (I/O) operations. These tasks take more time than operations happening inside the computer. Properly handling I/O is crucial for performance and usability in web development.
