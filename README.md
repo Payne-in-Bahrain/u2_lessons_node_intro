@@ -192,9 +192,29 @@ Timeout callback
 ```
 This demonstrates that while the asynchronous operation (setTimeout) is waiting, the event loop continues to execute other synchronous code.
 
+Here's an example of another real world use case that you'll see very soon:
+
+```
+async function fetchData() {
+  try {
+    // Asynchronously fetch data
+    let result = await fetch('https://example.com/data');
+
+    // Code here runs when the promise is resolved
+    console.log('Data fetched:', result);
+
+  } catch (error) {
+    // Code here runs if the promise is rejected
+    console.error('Error fetching data:', error);
+  }
+}
+```
+
 Understanding the event loop is essential for writing efficient and scalable Node.js applications, especially when dealing with a large number of concurrent connections. It allows you to handle many tasks simultaneously without blocking the execution of the program.
 
 So if someone asks in an interview, when you run a script using Node, it  runs in a single thread. However, this thread can handle multiple pieces of code simultaneously by running them asynchronously in the background. So, even though it's one thread, it can manage various tasks concurrently.
+
+If you're still having trouble understanding, think about this.  I'm teaching, I ask Michael to go get me some laban.  I'm going to continue teaching while Michael looks for the laban.  When Michael gets back with the laban, if it's the right flavor I'll say, 'Oh boy, laban!'  If not, I'll shake my head and say, 'Wrong!'  
 
 Cool, let's learn about Node Modules...
 
