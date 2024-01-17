@@ -136,9 +136,7 @@ Secondly, developer **synergy**. Developers can use JavaScript on both client & 
 
 The improvements in server performance and developer productivity result in **businesses saving money**.
 
-Businesses saving money results in **wide adoption**:
-
-<img src="https://i.imgur.com/5nvUBa3.jpg">
+Businesses saving money results in **wide adoption**.
 
 Most importantly, wide adoption of Node.js results in strong demand for Node developers!
 
