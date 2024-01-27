@@ -567,9 +567,15 @@ There is now a `node_modules` folder that contains a folder for the `request` mo
 
 There's also a new `package-lock.json` file that npm uses to track dependencies and unlike `package.json`, should not be edited.
 
+**`package.json`** is like the blueprint for your project. It lists what your project is, what it needs to run, and other details.
+
+**`package-lock.json`** is like a checklist created by the computer. It keeps track of exactly which versions of each tool or library your project is using, so that everyone working on the project uses the same versions.
+
+In short, `package.json` is the plan, and `package-lock.json` is the computer's record of exactly what was built according to that plan.
+
 Note: it's highly recommended that `node_modules` be added to your `.gitignore` file.
 
-We can now require the `request` module in **main.js** and make HTTP requests:
+We can now require the `axios` module in **main.js** and make HTTP requests:
 
 ```js
 // Don't specify path when module is in node_modules
